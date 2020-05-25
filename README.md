@@ -2,10 +2,7 @@
 
 Shop App from the [Flutter & Dart - The Complete Guide](https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/)  course on Udemy.
 
-## Getting Started
-
 ## About
-### Note: Do not take these recipes as reference as they are only placeholders
 This app emulates a Shopping App.
 - Shows a grid of available products.
 - Each product contains the following information:

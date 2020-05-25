@@ -1,16 +1,33 @@
 # shop_app
 
-A new Flutter project.
+Shop App from the [Flutter & Dart - The Complete Guide](https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/)  course on Udemy.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+## About
+### Note: Do not take these recipes as reference as they are only placeholders
+This app emulates a Shopping App.
+- Shows a grid of available products.
+- Each product contains the following information:
+  -Title
+  -Price 
+  -Description
+  -ImageUrl
+  -Favorite
+- Users can mark a product as favorite.
+- Users can set a filter to show only products marked as favorite
+- Users can add a product to the cart
+- Users can checkout an order and see past orders.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## What can you learn from this app?
+-App Lifecycle
+-State Managent using the provider pattern
+  -How and when to use the **Provider** package
+    -Using multiple providers
+    -Render a piece of code instead of running the whole build method using **Consumer**
+-Form Management
+  -Validating user input
+  -Setting initial values
+  -Setting input type (keyboard) 
+  -FocusNode Widget
+  -TextEditingController

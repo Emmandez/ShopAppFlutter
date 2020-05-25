@@ -14,17 +14,22 @@ This app emulates a Shopping App.
   - Description
   - ImageUrl
   - Favorite
-- Users can mark a product as favorite.
-- Users can set a filter to show only products marked as favorite
-- Users can add a product to the cart
-- Users can checkout an order and see past orders.
+- Users can
+ - Mark a product as favorite.
+ - Set a filter to show only products marked as favorite
+ - Add a product to the cart.
+ - Checkout an order and see past orders.
+ - Add new products.
+ - Edit existing products.
+ - Delete existing products
 
 ## What can you learn from this app?
--App Lifecycle
--State Managent using the provider pattern
+- App Lifecycle
+- State Managent using the provider pattern
   - How and when to use the **Provider** package
     - Using multiple providers
     - Render a piece of code instead of running the whole build method using **Consumer**
+    - When to listen to changes when using a provider.
 -Form Management
   - Validating user input
   - Setting initial values

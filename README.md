@@ -9,11 +9,11 @@ Shop App from the [Flutter & Dart - The Complete Guide](https://www.udemy.com/co
 This app emulates a Shopping App.
 - Shows a grid of available products.
 - Each product contains the following information:
-  -Title
-  -Price 
-  -Description
-  -ImageUrl
-  -Favorite
+  - Title
+  - Price 
+  - Description
+  - ImageUrl
+  - Favorite
 - Users can mark a product as favorite.
 - Users can set a filter to show only products marked as favorite
 - Users can add a product to the cart
@@ -22,12 +22,12 @@ This app emulates a Shopping App.
 ## What can you learn from this app?
 -App Lifecycle
 -State Managent using the provider pattern
-  -How and when to use the **Provider** package
-    -Using multiple providers
-    -Render a piece of code instead of running the whole build method using **Consumer**
+  - How and when to use the **Provider** package
+    - Using multiple providers
+    - Render a piece of code instead of running the whole build method using **Consumer**
 -Form Management
-  -Validating user input
-  -Setting initial values
-  -Setting input type (keyboard) 
-  -FocusNode Widget
-  -TextEditingController
+  - Validating user input
+  - Setting initial values
+  - Setting input type (keyboard) 
+  - FocusNode Widget
+  - TextEditingController

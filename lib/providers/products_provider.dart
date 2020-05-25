@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import './product.dart';
 
-class ProductsProvider with ChangeNotifier{
+class ProductsProvider with ChangeNotifier {
   List<Product> _items = [
     Product(
       id: 'p1',
@@ -37,9 +37,8 @@ class ProductsProvider with ChangeNotifier{
     ),
   ];
 
-  var _showFavoritesOnly = false;
 
-  List<Product> get items{
+  List<Product> get items {
     // if(_showFavoritesOnly) {
     //   return _items.where((product) => product.isFavorite).toList();
     // }
@@ -50,23 +49,32 @@ class ProductsProvider with ChangeNotifier{
     return _items.where((product) => product.isFavorite).toList();
   }
 
-
-  void addProduct(){
-    //_items.add(value);
+  void addProduct(Product product) {
+    final newProduct = Product(
+        title: product.title,
+        imageUrl: product.imageUrl,
+        description: product.description,
+        price: product.price,
+        id: DateTime.now().toString());
+    _items.insert(0, newProduct);
+    
     notifyListeners();
   }
 
-  // void showFavoritesOnly(){
-  //   _showFavoritesOnly = true;
-  //   notifyListeners();
-  // }
+  void updateProduct(Product newProduct){
+    final prodIndex = _items.indexWhere((product) => product.id == newProduct.id);
+    if(prodIndex >=0){
+      _items[prodIndex] = newProduct;
+      notifyListeners();
+    }
+  }
 
-  // void showAll(){
-  //   _showFavoritesOnly = false;
-  //   notifyListeners();
-  // }
+  void deleteProduct(String id){
+    _items.removeWhere((product) => product.id == id);
+    notifyListeners();
+  }
 
-  Product findById(String Id){
-    return _items.firstWhere((item) => item.id == Id);
+  Product findById(String id) {
+    return _items.firstWhere((item) => item.id == id);
   }
 }

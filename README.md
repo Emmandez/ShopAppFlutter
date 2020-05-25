@@ -27,7 +27,7 @@ This app emulates a Shopping App.
     - Using multiple providers
     - Render a piece of code instead of running the whole build method using **Consumer**
     - When to listen to changes when using a provider.
--Form Management
+- Form Management
   - Validating user input
   - Setting initial values
   - Setting input type (keyboard) 

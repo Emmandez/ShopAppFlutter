@@ -15,7 +15,7 @@ This app emulates a Shopping App.
   - Mark a product as favorite.
   - Set a filter to show only products marked as favorite
   - Add a product to the cart.
-  - Checkout an order and see past orders.
+  - Place an order and see past orders.
   - Add new products.
   - Edit existing products.
   - Delete existing products
@@ -33,3 +33,19 @@ This app emulates a Shopping App.
   - Setting input type (keyboard) 
   - FocusNode Widget
   - TextEditingController
+- HTTP Requests (This App uses Firebase as backend, but it's not using the firebase SDK)
+  - POST, GET, PUT, PATCH, DELETE requests.
+  - Encoding and decoding data.
+  - Working with async-await methods
+- Authentication
+  - Sign up users with Email and password.
+  - Log users in
+  - Autologin
+  - Autologout
+  - Persist user data once they close the app.
+- Animations
+  - AnimationContainer
+  - Animated Builder
+  - Transitions
+  - Hero
+  - Custom page transitions

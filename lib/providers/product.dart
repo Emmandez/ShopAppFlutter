@@ -23,17 +23,15 @@ class Product with ChangeNotifier {
     notifyListeners();
   }
 
-  Future<void> toogleFavoriteStatus() async {
-    final url = 'https://shop-flutter-f6145.firebaseio.com/products/$id.json';
+  Future<void> toogleFavoriteStatus(String authToken, String userId) async {
+    final url =
+        'https://shop-flutter-f6145.firebaseio.com/userFavorites/$userId/$id.json?auth=$authToken';
     print(this.isFavorite);
     this.isFavorite = !this.isFavorite;
     notifyListeners();
 
     try {
-      final response = await http.patch(url,
-          body: json.encode({
-            'isFavorite': this.isFavorite,
-          }));
+      final response = await http.put(url, body: json.encode(isFavorite));
 
       if (response.statusCode >= 400) _revertFavValue();
     } catch (error) {

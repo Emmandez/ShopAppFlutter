@@ -16,6 +16,11 @@ class CartItem {
 
 class Cart with ChangeNotifier {
   Map<String, CartItem> _items = {};
+  String _authToken;
+
+  set authToken(String token){
+    _authToken = token;
+  }
 
   Map<String, CartItem> get items {
     return {..._items};
